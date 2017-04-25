@@ -1,0 +1,10 @@
+{
+  "name": "@tgfjt/wifi-connect",
+  "version": "0.1.0",
+  "description": "Aliases to connect Wi-Fi quickly.",
+  "scripts": {
+    "install:scan": "install -b scan.sh ${PREFIX:-/usr/local}/bin/wifi-scan",
+    "install:connect": "install -b connect.sh ${PREFIX:-/usr/local}/bin/wifi-connect",
+    "install": "npm run install:scan && npm run install:connect"
+  }
+}
